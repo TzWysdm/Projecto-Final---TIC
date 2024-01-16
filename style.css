@@ -57,7 +57,7 @@ body {
 .profile-photo {
     width: 2.7rem;
     aspect-ratio: 1/1;
-    border-radius: 50%;
+    border-radius: 100%;
     overflow: hidden;
 }
 
@@ -96,7 +96,7 @@ img {
 nav {
     width: 100%;
     background: var(--color-white);
-    padding: 0.7rem 0;
+    padding: 0.9rem 0;
     position: fixed;
     top: 0%;
     z-index: 10;
@@ -313,27 +313,27 @@ main .container .left .profile {
 }
 
 .middle .stories .story:nth-child(1){
-    background: url(Img/josue.jpg)
+    background: url(Img/diegofie.jpg)
     no-repeat center center/cover;
 
 }
 .middle .stories .story:nth-child(2){
-    background: url(Img/josue.jpg)
+    background: url(Img/barza.jpg)
     no-repeat center center/cover;
 
 }
 .middle .stories .story:nth-child(3){
-    background: url(Img/josue.jpg)
+    background: url(Img/sideral.jpg)
     no-repeat center center/cover;
 
 }
 .middle .stories .story:nth-child(4){
-    background: url(Img/josue.jpg)
+    background: url(Img/pantera.jpg)
     no-repeat center center/cover;
 
 }
 .middle .stories .story:nth-child(5){
-    background: url(Img/josue.jpg)
+    background: url(Img/lucasss.jpg)
     no-repeat center center/cover;
 
 }
@@ -529,7 +529,7 @@ main .container .right {
 .right .requests .info {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .right .requests .action {
