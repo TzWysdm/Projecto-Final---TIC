@@ -22,7 +22,7 @@
                 <input type="search" placeholder="Busca por creadores, nuevos posts y projectos">
             </div>
             <div class="create">
-                <label class="btn btn-primary" for="create-post">Crear</label>
+                <label class="btn btn-primary" for="create-post">Cerrar sesión</label>
                 <div class="profile-photo">
                     <img src="./Img/Diego.jpg" alt="">
                 </div>
@@ -47,14 +47,15 @@
                 </a>
 
                 <div class="sidebar">
-                    <a class="menu-item active">
+                    <a class="menu-item">
                         <span><i class="uil uil-home"></i></span> <h3>Inicio</h3>
                     </a>
-                    <a class="menu-item">
+                    <a class="menu-item" id="explore">
                         <span><i class="uil uil-compass"></i></span> <h3>Explorar</h3>
+                            
                     </a>
                     <a class="menu-item" id="notifications">
-                        <span><i class="uil uil-bell"><small class="notification-count">8+</small></i></span> <h3>Avisos</h3>
+                        <span><i class="uil uil-bell"><small class="notification-count">4+</small></i></span> <h3>Avisos</h3>
                         <div class="notifications-popup">
                             <div>
                                 <div class="profile-photo">
@@ -95,12 +96,12 @@
                         </div>
                     </a>
                     <a class="menu-item" id="messages-notification">
-                        <span><i class="uil uil-envelope-alt"><small class="notification-count">6+</small></i></span> <h3>Mensajes</h3>
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">3+</small></i></span> <h3>Mensajes</h3>
                     </a>
                     <a class="menu-item" id="theme">
                         <span><i class="uil uil-palette"></i></span> <h3>Temas</h3>
                     </a>
-                    <a class="menu-item active">
+                    <a class="menu-item">
                         <span><i class="uil uil-setting"></i></span> <h3>Ajustes</h3>
                     </a>
                 </div>
@@ -171,7 +172,7 @@
                         </div>
                         <div class="action-button">
                             <div class="interaction-buttons">
-                                <span><i class="uil uil-heart"></i> </span>
+                                <span id="heart-icon"><i class="uil uil-heart"></i> </span>
                                 <span><i class="uil uil-comment-dots"></i> </span>
                                 <span><i class="uil uil-share-alt"></i> </span>
                             </div>
@@ -344,7 +345,7 @@
                     <div class="category">
                         <h6 class="active">Recientes</h6>
                         <h6>General</h6>
-                        <h6 class="message-requests">Solicitudes(5)</h6>
+                        <h6 class="message-requests">Solicitudes(2)</h6>
                     </div>
 
                     <div class="message">

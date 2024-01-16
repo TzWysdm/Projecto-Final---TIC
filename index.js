@@ -201,5 +201,57 @@ Bg3.addEventListener("click", () => {
     changeBG();
 })
 
+const form = document.querySelector('.create-post');
+const feeds = document.querySelector('.feeds');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
+  const content = form.querySelector('#create-post').value;
+  const profileImg = form.querySelector('.profile-photo img').src;
+
+  const feed = createFeed(content, profileImg);
+  
+  feeds.appendChild(feed);
+  
+  form.reset();
+});
+
+function createFeed(content, profileImg) {
+  // Crear los elementos del feed
+  const div = document.createElement('div');
+  div.className = 'feed';
+
+  // Añadir contenido
+  div.innerHTML = `
+    <div class="head">
+      <div class="user">
+        <div class="profile-photo">
+          <img src="${profileImg}">  
+        </div>
+        <div class="ingo">
+          <h3>Diego Flores</h3>
+          <small>Ahora</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="post-texto">
+      ${content}
+    </div>
+    <div class="interaction-buttons">
+    <span><i class="uil uil-heart"></i> </span>
+    <span><i class="uil uil-comment-dots"></i> </span>
+    <span><i class="uil uil-share-alt"></i> </span>
+    </div>
+
+  `;
+
+  return div;
+}
+
+
+
+
 
 
